@@ -1,0 +1,27 @@
+<script>
+	function pulaLinha () 
+	 {
+		document.write ("<br>");
+		document.write ("<br>");
+	}
+
+	function mostra (frase) {
+
+		document.write (frase);
+		pulaLinha();
+	}
+
+    const respostas = ["BRANCA" , "PARDA" , "PRETA" , "PARDA" , "BRANCA" , "PRETA" , "PRETA","PARDA"];
+     
+    let contador = 0
+    
+    for(let item of respostas){
+        if (item == "PRETA" || item == "PARDA") {
+            contador = contador+1;   
+        }
+    }
+    
+    mostra(contador)
+    
+
+</script>

@@ -1,0 +1,33 @@
+<script>
+	function pulaLinha () 
+	 {
+		document.write ("<br>");
+		document.write ("<br>");
+	}
+
+	function mostra (frase) {
+
+		document.write (frase);	
+		pulaLinha();
+	}
+
+	var idade = parseInt (prompt("DIGITE A SUA IDADE: "));	
+	var ehEmancipado = false;
+	var documentacaoOK = false;
+	var score  = parseInt (prompt("INFORME O SCORE: "));
+
+	if ((idade >= 18 || ehEmancipado == true ) && documentacaoOK == true) {
+
+	 if (score < 500) {
+	 	mostra ("500")
+	 } else if (score <=699) {
+	 	mostra ("1500")
+	 } else {
+	 	mostra ("3000")
+	 }
+	}  else {
+		mostra ("CONTA NEGADA")
+	}
+
+	</script>
+

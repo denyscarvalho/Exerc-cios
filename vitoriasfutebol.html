@@ -1,0 +1,28 @@
+<script>
+	function pulaLinha () 
+	 {
+		document.write ("<br>");
+		document.write ("<br>");
+	}
+
+	function mostra (frase) {
+
+		document.write (frase);
+		pulaLinha();
+	}
+	
+    const resultados = ["V","E","V","D","V","V"];
+
+    let pontos = 0
+
+    for (let item of resultados) {
+
+	  if (item == "V") {
+		pontos = pontos + 3;
+	} else if (item == "E") {
+	
+		pontos = pontos + 1;
+		}
+	}
+	mostra (pontos)
+

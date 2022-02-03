@@ -1,0 +1,29 @@
+<script>
+	function pulaLinha () 
+	 {
+		document.write ("<br>");
+		document.write ("<br>");
+	}
+
+	function mostra (frase) {
+
+		document.write (frase);
+		pulaLinha();
+	}
+	var golsA = parseInt (prompt ("INFORME A QUANTIDADE DE GOLS DO TIME A:  "));
+	var golsB = parseInt (prompt ("INFORME A QUANTIDADE DE GOLS DO TIME B:  "));
+
+	if (golsA > golsB) {
+
+		mostra ("3")
+	} 
+	else if (golsA == golsB) {
+
+		mostra ("1")
+	} 
+	else
+	{
+		mostra("0")
+	}
+
+	</script>
